@@ -1,5 +1,6 @@
 "use client";
 
+import { LiveProjects } from "@/components/LiveProjects";
 import { SocialButtons } from "@/components/SocialButtons";
 import Image from "next/image";
 export function HeroSection() {
@@ -10,6 +11,7 @@ export function HeroSection() {
         <h3 className="text-1xl whitespace-nowrap shrink-0 mb-4">I'm a 24 yo software developer from Toronto 🇨🇦</h3>
         <h2 className="text-1xl font-semibold mb-8">I build cloud-native, full stack applications.</h2>
         <SocialButtons />
+        <LiveProjects />
       </div>
       <div className="grid-column">
         <Image
