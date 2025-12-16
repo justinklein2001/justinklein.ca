@@ -15,9 +15,9 @@ export function HeroSection() {
       </div>
       <div className="grid-column">
         <Image
-          width={100}
-          height={100}
-          src="/profile.jpeg"
+          width={460}
+          height={460}
+          src="/profile.png"
           alt="Profile Picture"
           className="w-full h-auto max-w-sm mx-auto rounded-full border-white border-4"
         />
