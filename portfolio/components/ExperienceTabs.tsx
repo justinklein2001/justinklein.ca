@@ -18,6 +18,7 @@ interface TimelineEvent {
   bullets: string[];
   iconLogo: string;
   location?: string;
+  stack?: string[];
 }
 
 // Define the structure for the tab content
@@ -39,6 +40,7 @@ export function ExperienceTabs() {
           title: "Software Development Domain Expert (Contract)",
           subtitle: "Data Annotation",
           date: "Apr 2024 - Present",
+          
           bullets: [
             "Developed and operationalized RAG (Retrieval-Augmented Generation) systems in production full-stack environments (Node, Postgres).",
             "Analyzed and improved LLM reliability through systematic fault-pattern research.",
@@ -46,6 +48,7 @@ export function ExperienceTabs() {
           ],
           iconLogo: "/da.jpeg",
           location: "Remote",
+          stack: ["React", "Python", "Postgres", "Docker"],
         },
         {
           title: "Software Developer (Co-op)",
@@ -58,6 +61,7 @@ export function ExperienceTabs() {
           ],
           iconLogo: "/adknown.jpeg",
           location: "Guelph, ON",
+          stack: ["React", "PHP", "MySQL", "AWS", "Docker"],
         },
         {
           title: "Software Developer (Co-op)",
@@ -70,6 +74,7 @@ export function ExperienceTabs() {
           ],
           iconLogo: "/tulip.jpeg",
           location: "Kitchener, ON",
+          stack: ["React", "PHP", "MySQL","Docker"],
         },
         {
           title: "Software Developer (Co-op)",
@@ -81,6 +86,7 @@ export function ExperienceTabs() {
           ],
           iconLogo: "/ncr.jpeg",
           location: "Waterloo, ON",
+          stack: ["React", "Spring", "Docker"],  
         },
         {
           title: "Web Developer (Co-op)",
@@ -92,6 +98,7 @@ export function ExperienceTabs() {
           ],
           iconLogo: "/heart_stroke.png", 
           location: "Toronto, ON",
+          stack: ["React", "Node.js", "MySQL"],
         },
       ],
     },
@@ -195,7 +202,13 @@ export function ExperienceTabs() {
                                 <span className="text-gray-500 ml-2">| {event.location}</span>
                             )}
                         </Typography>
-                        
+                        {event.stack && (
+                            <div className="mt-1">
+                                <Typography variant="lead" className="font-mono text-xs text-gray-100">
+                                    <b>Stack:</b> {event.stack.join(", ")}
+                                </Typography>
+                            </div>
+                        )}
                         {/* Bullet Points */}
                         <ul className="list-disc space-y-1 ml-5 mt-2">
                             {event.bullets.map((bullet, bulletIndex) => (

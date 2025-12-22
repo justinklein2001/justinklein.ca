@@ -13,7 +13,7 @@ export function HeroSection() {
         <SocialButtons />
         <LiveProjects />
       </div>
-      <div className="grid-column">
+      <div className="grid-column mt-10 md:mt-0">
         <Image
           width={460}
           height={460}

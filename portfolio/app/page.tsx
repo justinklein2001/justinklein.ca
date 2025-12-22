@@ -1,6 +1,8 @@
 "use client";
 import { ExperienceSection } from "@/sections/ExperienceSection";
 import { HeroSection } from "@/sections/HeroSection";
+import { ProjectSection } from "@/sections/ProjectSection";
+import { SummarySection } from "@/sections/SummartSection";
 
 
 export default function Home() {
@@ -17,6 +19,8 @@ export default function Home() {
       >
         <HeroSection/>
         <ExperienceSection/>
+        <ProjectSection/>
+        <SummarySection/>
       </div>
     </main> 
   );
