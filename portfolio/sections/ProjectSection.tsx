@@ -6,7 +6,7 @@ import { ProjectsData } from "../types/project";
 export function ProjectSection() {
 
     return (
-        <div className="w-full py-12 md:py-20">
+        <div className="w-full py-12 md:py-20" id="projects">
             <div className="mx-auto px-4">
                 <Typography variant="h2" color="white" className="text-3xl font-bold mb-10 text-left">
                     My Projects
