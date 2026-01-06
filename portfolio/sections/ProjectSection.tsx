@@ -1,7 +1,7 @@
 "use client";
 import { Typography } from "@material-tailwind/react";
 import { ProjectCard } from "../components/ProjectCard"; 
-import { ProjectsData } from "../types/project";
+import { ProjectsData } from "../data/ProjectsData";
 
 export function ProjectSection() {
 

@@ -3,13 +3,20 @@
 import { LiveProjects } from "@/components/LiveProjects";
 import { SocialButtons } from "@/components/SocialButtons";
 import Image from "next/image";
+
 export function HeroSection() {
   return (
     <div className="grid md:grid-cols-2 justify-center items-center mt-20" id="hero">
       <div className="grid-column justify-center items-center">
-        <h1 className="text-5xl font-bold mb-2">Hey, it's Justin.</h1>
-        <h3 className="text-1xl whitespace-nowrap shrink-0 mb-4">I'm a 24 yo software developer from Toronto 🇨🇦</h3>
-        <h2 className="text-1xl font-semibold mb-8">I build cloud-native, full stack applications.</h2>
+        <h1 className="md:text-5xl text-4xl font-bold mb-2">Hey, it&apos;s Justin.</h1>
+        <h3 className="md:text-lg text-md whitespace-nowrap shrink-0">
+          24 yo software developer based in Georgetown 🇨🇦
+        </h3>
+        <p className="md:text-md text-sm text-gray-400 font-medium mb-4 mt-1">
+            Open to <span className="text-gray-300">on-site/hybrid</span> in Halton, Peel & Toronto
+        </p>
+        
+        <h2 className="md:text-lg text-sm font-semibold mb-8">I build cloud-native, full stack applications.</h2>
         <SocialButtons />
         <LiveProjects />
       </div>

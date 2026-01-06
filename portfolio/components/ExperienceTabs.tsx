@@ -7,129 +7,10 @@ import {
   TabPanel,
   Typography,
 } from "@material-tailwind/react";
-import { MdOutlineWorkOutline } from "react-icons/md";
-import { IoSchoolOutline } from "react-icons/io5";
-
-// Define the structure for a single event
-interface TimelineEvent {
-  title: string;
-  subtitle: string;
-  date: string;
-  bullets: string[];
-  iconLogo: string;
-  location?: string;
-  stack?: string[];
-}
-
-// Define the structure for the tab content
-interface TabItem {
-  label: string;
-  value: string;
-  icon: React.ElementType; 
-  events: TimelineEvent[];
-}
+import { ExperienceData as data } from "../data/ExperienceData";
 
 export function ExperienceTabs() {
-  const data: TabItem[] = [
-    {
-      label: "Work Experience",
-      value: "experience",
-      icon: MdOutlineWorkOutline,
-      events: [
-        {
-          title: "Software Development Domain Expert (Contract)",
-          subtitle: "Data Annotation",
-          date: "Apr 2024 - Present",
-          
-          bullets: [
-            "Developed and operationalized RAG (Retrieval-Augmented Generation) systems in production full-stack environments (Node, Postgres).",
-            "Analyzed and improved LLM reliability through systematic fault-pattern research.",
-            "Containerized multi-service stacks with Docker, optimizing model-test execution pipelines."
-          ],
-          iconLogo: "/da.jpeg",
-          location: "Remote",
-          stack: ["React", "Python", "Postgres", "Docker"],
-        },
-        {
-          title: "Software Developer (Co-op)",
-          subtitle: "Adknown",
-          date: "Jan 2023 - Aug 2023",
-          bullets: [
-            "Delivered production features across a React, PHP, MySQL, AWS and Docker stack.",
-            "Dockerized two ad-tracking pixels, lowering environment setup time by 40%.",
-            "Architected a Bing campaign linkage tool, improving marketers' CPC performance."
-          ],
-          iconLogo: "/adknown.jpeg",
-          location: "Guelph, ON",
-          stack: ["React", "PHP", "MySQL", "AWS", "Docker"],
-        },
-        {
-          title: "Software Developer (Co-op)",
-          subtitle: "Tulip Retail",
-          date: "May 2022 - Aug 2022",
-          bullets: [
-            "Delivered features on the LiveConnect & Appointments platform (PHP, React, Docker).",
-            "Contributed to the Tulip Appointments NPM package used by clients such as Chanel and Michael Kors.",
-            "Integrated the appointments widget into the core Clienteling product, improving high-value customer booking flows."
-          ],
-          iconLogo: "/tulip.jpeg",
-          location: "Kitchener, ON",
-          stack: ["React", "PHP", "MySQL","Docker"],
-        },
-        {
-          title: "Software Developer (Co-op)",
-          subtitle: "NCR Corporation",
-          date: "Sep 2021 - Dec 2021",
-          bullets: [
-            "Worked on the API Toolkit (Draft) team using Jenkins, Docker, React, OpenAPI and Spring.",
-            "Collaborated in an agile environment, completing JIRA sprint work with high delivery velocity."
-          ],
-          iconLogo: "/ncr.jpeg",
-          location: "Waterloo, ON",
-          stack: ["React", "Spring", "Docker"],  
-        },
-        {
-          title: "Web Developer (Co-op)",
-          subtitle: "Heart & Stroke",
-          date: "May 2021 - Aug 2021",
-          bullets: [
-            "Built a standalone React/Node/MySQL direct-mail donation platform.",
-            "Integrated Stripe and Moneris SDKs, improving PCI compliance and reducing transaction fees by 20%."
-          ],
-          iconLogo: "/heart_stroke.png", 
-          location: "Toronto, ON",
-          stack: ["React", "Node.js", "MySQL"],
-        },
-      ],
-    },
-    {
-      label: "Education",
-      value: "education",
-      icon: IoSchoolOutline,
-      events: [
-        {
-          title: "AWS Certified Solutions Architect – Associate",
-          subtitle: "Amazon Web Services (AWS)",
-          date: "2025",
-          bullets: [
-            "Demonstrated expertise in designing and deploying scalable, highly available, and fault-tolerant systems on AWS.",
-          ],
-          iconLogo: "/aws.png", 
-        },
-        {
-          title: "Bachelor of Computing, Software Engineering (Co-op)",
-          subtitle: "University of Guelph",
-          date: "2019 - 2024",
-          bullets: [
-            "Minor in Business Administration, graduated with Honours (GPA: 84.6%).",
-            "Intensive focus on software design, algorithms, data structures, and full stack development.",
-          ],
-          iconLogo: "/guelph.png", 
 
-        },
-      ],
-    },
-  ];
 
   return (
     <div className="w-full">
@@ -186,7 +67,7 @@ export function ExperienceTabs() {
                     {/* Content Card */}
                     <div className="bg-gray-900 border border-gray-800 p-4 rounded-lg shadow-xl ml-4">
                         {/* Date (Top Right) */}
-                        <Typography variant="small" className="font-mono text-xs text-gray-500 float-right mt-1 whitespace-nowrap">
+                        <Typography variant="small" className="font-mono md:text-sm text-xs text-gray-400 float-right mt-1 whitespace-nowrap">
                             {event.date}
                         </Typography>
 
@@ -199,12 +80,12 @@ export function ExperienceTabs() {
                             {event.subtitle}
                             {/* Location Pipeline */}
                             {event.location && (
-                                <span className="text-gray-500 ml-2">| {event.location}</span>
+                                <span className="text-gray-400 ml-2">| {event.location}</span>
                             )}
                         </Typography>
                         {event.stack && (
                             <div className="mt-1">
-                                <Typography variant="lead" className="font-mono text-xs text-gray-100">
+                                <Typography variant="lead" className="font-mono md:text-sm text-xs text-gray-100">
                                     <b>Stack:</b> {event.stack.join(", ")}
                                 </Typography>
                             </div>
@@ -213,7 +94,7 @@ export function ExperienceTabs() {
                         <ul className="list-disc space-y-1 ml-5 mt-2">
                             {event.bullets.map((bullet, bulletIndex) => (
                                 <li key={bulletIndex}>
-                                    <Typography variant="small" className="text-gray-400 leading-relaxed">
+                                    <Typography variant="small" className="text-gray-300 md:text-sm text-xs leading-relaxed">
                                         {bullet}
                                     </Typography>
                                 </li>

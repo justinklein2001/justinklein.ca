@@ -8,22 +8,22 @@ export function SummarySection() {
                 </Typography>
             <ul className="list-disc space-y-1 mt-2 py-4 px-6 mb-6 bg-gray-900 border border-gray-800 hover:-translate-y-1 transition-all duration-300 rounded-md">
                 <li key="school" className="p-0">
-                    <Typography variant="lead" className="text-gray-400 leading-relaxed">
-                        Went to school for <b>Software Engineering</b>, in a <b>Co-op</b> program. 👨‍🎓
+                    <Typography className="text-gray-300 leading-relaxed">
+                        Graduated with Honours in Software Engineering <b>(Co-op)</b>. 🎓
                     </Typography>
                 </li>
                 <li key="work" className="p-0">
-                    <Typography variant="lead" className="text-gray-400">
+                    <Typography className="text-gray-300">
                         Worked at <b>4</b> different companies as a <b>software developer</b>, all full stack roles. 👨‍💻
                     </Typography>
                 </li>
                 <li key="ai" className="p-0">
-                    <Typography variant="lead" className="text-gray-400">
+                    <Typography className="text-gray-300">
                         Currently working behind the scenes to make <b>AI</b> better at coding. 💻
                     </Typography>
                 </li>
                 <li key="cloud" className="p-0">
-                    <Typography variant="lead" className="text-gray-400">
+                    <Typography className="text-gray-300">
                         Enjoy working with <b>cloud-native</b> applications and modern web frameworks. 💡
                     </Typography>
                 </li>
