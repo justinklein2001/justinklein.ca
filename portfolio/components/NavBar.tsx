@@ -6,6 +6,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
  
 function NavList() {
   return (
@@ -40,6 +41,23 @@ function NavList() {
           TLDR
         </a>
       </Typography>
+      <a 
+          href="https://www.linkedin.com/in/justinklein2001/"
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="h-5 w-5 flex items-center justify-center rounded-full text-white hover:bg-white/10 hover:scale-110 transition-transform md:mb-0 mb-1"
+      >
+          <FaLinkedin className="h-5 w-5" />
+      </a>
+      <a 
+          href="https://github.com/justinklein2001"
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="h-5 w-5 flex items-center justify-center rounded-full text-white hover:bg-white/10 hover:scale-110 transition-transform"
+      >
+          <FaGithub className="h-5 w-5" />
+      </a>
+
     </ul>
   );
 }

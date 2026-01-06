@@ -1,14 +1,11 @@
-// ProjectCard.tsx (Helper Component)
 import {
   Card,
-  CardHeader,
   CardBody,
   CardFooter,
   Typography,
   Button,
 } from "@material-tailwind/react";
-
-import Image from "next/image";
+;
 import React from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { TechStackMap as techStack } from "../types/tech-stack";
@@ -44,6 +41,7 @@ interface ProjectCardProps {
         </div>
       </CardBody>
       <CardFooter className="md:pt-6 pb-4 px-6 flex items-center gap-4">
+        {project.liveLink && (
             <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
                 <Button 
                     variant="filled"
@@ -53,6 +51,7 @@ interface ProjectCardProps {
                     <FaExternalLinkAlt className="h-4 w-4" />
                 </Button>
             </a>
+        )}
               <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
                 <Button 
                     variant="filled"
