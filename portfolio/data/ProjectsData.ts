@@ -14,7 +14,6 @@ export const ProjectsData: Project[] = [
         title: "Get Quizzed!",
         shortDescription: "Web app that ingests Get Smart! notes and quizzes users using LLMs and vector search.",
         techStack: ["React", "TypeScript", "Next.js", "AWS", "GitHub Actions"],
-        liveLink: "https://get-quizzed.justinklein.ca",
         githubLink: "https://github.com/justinklein2001/get-quizzed",
     },
     {

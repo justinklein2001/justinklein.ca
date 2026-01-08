@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'export',
+    // Required for static export if <Image /> used without an external loader
+    images: {
+      unoptimized: true,
+    },
+    trailingSlash: true,
 };
 
 export default nextConfig;
