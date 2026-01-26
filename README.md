@@ -1,6 +1,6 @@
 # Portfolio Site - justinklein.ca
 ## Author: Justin Klein
-## Last Updated: January 8th, 2026 
+## Last Updated: January 26th, 2026 
 
 ### Overview
 Portfolio site built using **Next.js, TypeScript, TailwindCSS and MaterialUI**. Built to quickly and efficiently provide a high-level overview of who I am and what I do. Designed to be able to be effectively scanned in **< 10 seconds**.
