@@ -79,15 +79,15 @@ export const ExperienceData: ExperienceTab[] = [
     value: "education",
     icon: IoSchoolOutline,
     events: [
-      {
-        title: "AWS Certified Solutions Architect – Associate",
-        subtitle: "Amazon Web Services (AWS)",
-        date: "2026",
-        bullets: [
-          "Demonstrated expertise in designing and deploying scalable, highly available, and fault-tolerant systems on AWS.",
-        ],
-        iconLogo: "/aws.png", 
-      },
+      // {
+      //   title: "AWS Certified Solutions Architect – Associate",
+      //   subtitle: "Amazon Web Services (AWS)",
+      //   date: "2026",
+      //   bullets: [
+      //     "Demonstrated expertise in designing and deploying scalable, highly available, and fault-tolerant systems on AWS.",
+      //   ],
+      //   iconLogo: "/aws.png", 
+      // },
       {
         title: "Bachelor of Computing, Software Engineering (Co-op)",
         subtitle: "University of Guelph",
