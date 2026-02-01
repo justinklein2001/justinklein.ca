@@ -4,8 +4,8 @@ export const ProjectsData: Project[] = [
     {
         id: 1,
         title: "Get Smart!",
-        shortDescription: "Documentation site hosting personal tech notes, vectorized and uploaded to an AWS S3 Vectors bucket.",
-        techStack: ["Python", "Markdown", "AWS", "GitHub Actions"],
+        shortDescription: "Documentation site hosting professional tech notes, vectorized and uploaded to an AWS S3 Vectors bucket.",
+        techStack: ["TypeScript", "Markdown", "AWS", "GitHub Actions"],
         liveLink: "https://get-smart.justinklein.ca",
         githubLink: "https://github.com/justinklein2001/my-tech-notes",
     },
@@ -14,6 +14,7 @@ export const ProjectsData: Project[] = [
         title: "Get Quizzed!",
         shortDescription: "Web app that ingests Get Smart! notes and quizzes users using LLMs and vector search.",
         techStack: ["React", "TypeScript", "Next.js", "AWS", "GitHub Actions"],
+        liveLink: "https://get-quizzed.justinklein.ca",
         githubLink: "https://github.com/justinklein2001/get-quizzed",
     },
     {

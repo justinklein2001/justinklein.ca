@@ -65,7 +65,7 @@ export function ExperienceTabs() {
                     </div>
 
                     {/* Content Card */}
-                    <div className="bg-gray-900 border border-gray-800 p-4 rounded-lg shadow-xl ml-4">
+                    <div className="bg-gray-900 border border-gray-800 p-4 rounded-lg shadow-xl ml-4 transition-colors duration-300">
                         {/* Date (Top Right) */}
                         <Typography variant="small" className="font-mono md:text-sm text-xs text-gray-400 float-right mt-1 whitespace-nowrap">
                             {event.date}

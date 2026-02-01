@@ -16,7 +16,7 @@ interface ProjectCardProps {
 }
   export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <Card className="mx-auto bg-gray-900 border border-gray-800 hover:-translate-y-1 transition-all duration-300 rounded-md">
+    <Card className="mx-auto bg-gray-900 border border-gray-800 hover:border-gray-700 hover:-translate-y-1 transition-all duration-300 rounded-md">
       <CardBody className="py-4 px-6 flex flex-col justify-between">
         <div className="h-26">
           <Typography variant="h5" color="white" className="mb-2 font-bold">
