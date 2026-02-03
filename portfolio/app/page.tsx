@@ -15,15 +15,15 @@ export default function Home() {
         currentApp="portfolio"
         rightContent={
           <div className="flex items-center gap-6">
-            <a href="#experience" className="text-sm font-medium text-gray-400 hover:text-white transition-colors hidden sm:block">Experience</a>
-            <a href="#projects" className="text-sm font-medium text-gray-400 hover:text-white transition-colors hidden sm:block">Projects</a>
-            <a href="#summary" className="text-sm font-medium text-gray-400 hover:text-white transition-colors hidden sm:block">TLDR</a>
-            <div className="h-4 w-px bg-white/20 mx-1 hidden sm:block" />
+            <a href="#experience" className="text-sm font-medium text-[var(--foreground)] opacity-70 hover:opacity-100 transition-colors hidden sm:block">Experience</a>
+            <a href="#projects" className="text-sm font-medium text-[var(--foreground)] opacity-70 hover:opacity-100 transition-colors hidden sm:block">Projects</a>
+            <a href="#summary" className="text-sm font-medium text-[var(--foreground)] opacity-70 hover:opacity-100 transition-colors hidden sm:block">TLDR</a>
+            <div className="h-4 w-px bg-[var(--foreground)]/20 mx-1 hidden sm:block" />
             <a 
                 href="https://www.linkedin.com/in/justinklein2001/"
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-[var(--foreground)] opacity-70 hover:opacity-100 transition-colors"
             >
                 <FaLinkedin className="h-5 w-5" />
             </a>
@@ -31,7 +31,7 @@ export default function Home() {
                 href="https://github.com/justinklein2001"
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-[var(--foreground)] opacity-70 hover:opacity-100 transition-colors"
             >
                 <FaGithub className="h-5 w-5" />
             </a>
