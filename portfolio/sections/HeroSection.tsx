@@ -17,7 +17,7 @@ export function HeroSection() {
         <p className="md:text-md text-sm text-gray-400 font-medium mb-4 mt-1">
             Open to <span className="text-gray-300">on-site/hybrid</span> roles in the GTA.
         </p>
-        <h2 className="md:text-lg text-sm font-semibold mb-8">People person who loves tech.</h2>
+        <h2 className="md:text-lg text-sm font-semibold mb-8">Tech-savvy. People-focused.</h2>
         <SocialButtons />
         <LiveProjects />
       </div>
@@ -25,7 +25,7 @@ export function HeroSection() {
         <Image
           width={460}
           height={460}
-          src="/profile.png"
+          src="/pfp_2026_proper.JPG"
           alt="Profile Picture"
           className="w-full h-auto max-w-sm mx-auto rounded-full border-white border-4"
         />
