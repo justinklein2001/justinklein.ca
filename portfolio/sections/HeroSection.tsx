@@ -12,7 +12,7 @@ export function HeroSection() {
           Hey, it&apos;s Justin.
         </h1>
         <h3 className="md:text-lg text-md whitespace-nowrap shrink-0">
-          24 yo software developer based in Toronto 🇨🇦
+          software developer based in Toronto 🇨🇦
         </h3>
         <p className="md:text-md text-sm text-gray-400 font-medium mb-4 mt-1">
             Open to <span className="text-gray-300">on-site/hybrid</span> roles in the GTA.
