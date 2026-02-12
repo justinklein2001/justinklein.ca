@@ -19,7 +19,7 @@ export function SummarySection() {
                 </li>
                 <li key="ai" className="p-0">
                     <Typography className="text-gray-300">
-                        Currently working behind the scenes to make <b>AI</b> better at coding. 💻
+                        Currently working behind the scenes to make <b>AI</b> better at coding and <b>digitally transforming</b> a small business. 💻
                     </Typography>
                 </li>
                 <li key="cloud" className="p-0">

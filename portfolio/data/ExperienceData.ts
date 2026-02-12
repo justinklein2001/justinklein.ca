@@ -9,6 +9,20 @@ export const ExperienceData: ExperienceTab[] = [
     icon: MdOutlineWorkOutline,
     events: [
       {
+        title: "Technical Solutions Specialist (Freelance)",
+        subtitle: "Anomet Inc.",
+        date: "Dec 2025 - Present",
+        
+        bullets: [
+          "Gathered and documented business requirements from the President of the company, translating stakeholder needs into tangible technical designs.",
+          "Architected a custom CRM with SharePoint Integration, leveraging NestJS, React, Postgres and Azure, enabling the sunsetting of a deprecated on-premise Windows Server 2012 R2.",
+          "Continually interfaced with the President of the company to ensure that proposed solutions meet their business needs."
+        ],
+        iconLogo: "/anomet.jpeg",
+        location: "Brampton, ON",
+        stack: ["React", "NestJS","Postgres", "Azure", "Microsoft 365"],
+      },
+      {
         title: "Software Developer (Contract)",
         subtitle: "Data Annotation",
         date: "Apr 2024 - Present",
@@ -79,17 +93,8 @@ export const ExperienceData: ExperienceTab[] = [
     value: "education",
     icon: IoSchoolOutline,
     events: [
-      // {
-      //   title: "AWS Certified Solutions Architect – Associate",
-      //   subtitle: "Amazon Web Services (AWS)",
-      //   date: "2026",
-      //   bullets: [
-      //     "Demonstrated expertise in designing and deploying scalable, highly available, and fault-tolerant systems on AWS.",
-      //   ],
-      //   iconLogo: "/aws.png", 
-      // },
       {
-        title: "Bachelor of Computing, Software Engineering (Co-op)",
+        title: "Bachelor of Computing, Honours Software Engineering (Co-op)",
         subtitle: "University of Guelph",
         date: "2019 - 2024",
         bullets: [
