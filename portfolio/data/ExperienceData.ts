@@ -9,7 +9,7 @@ export const ExperienceData: ExperienceTab[] = [
     icon: MdOutlineWorkOutline,
     events: [
       {
-        title: "Technical Solutions Specialist (Freelance)",
+        title: "Software Consultant (Freelance)",
         subtitle: "Anomet Inc.",
         date: "Dec 2025 - Present",
         
