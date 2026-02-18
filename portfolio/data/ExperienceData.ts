@@ -14,9 +14,8 @@ export const ExperienceData: ExperienceTab[] = [
         date: "Dec 2025 - Present",
         
         bullets: [
-          "Gathered and documented business requirements from the President of the company, translating stakeholder needs into tangible technical designs.",
           "Architected a custom CRM with SharePoint Integration, leveraging NestJS, React, Postgres and Azure, enabling the sunsetting of a deprecated on-premise Windows Server 2012 R2.",
-          "Continually interfaced with the President of the company to ensure that proposed solutions meet their business needs."
+          "Gathered and documented business requirements from the President of the company, translating stakeholder needs into tangible technical designs.",
         ],
         iconLogo: "/anomet.jpeg",
         location: "Brampton, ON",
