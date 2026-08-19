@@ -9,12 +9,25 @@ export const ExperienceData: ExperienceTab[] = [
     icon: MdOutlineWorkOutline,
     events: [
       {
-        title: "Software Consultant (Freelance)",
-        subtitle: "Anomet Inc.",
-        date: "Dec 2025 - Present",
+        title: "Software Engineer",
+        subtitle: "Bulloch Technologies",
+        date: "Jun 2026 - Present",
         
         bullets: [
-          "Architected a custom CRM with SharePoint Integration, leveraging NestJS, React, Postgres and Azure, enabling the sunsetting of a deprecated on-premise Windows Server 2012 R2.",
+          "Working as a Software Engineer on the Data and Loyalty team, leveraging C++ and SDL to deliver features and resolve bugs on a forecourt petroleum POS system used daily by thousands of client sites, such as Esso and Petro Canada.",
+          "Working closely with QA to replicate and resolve client-facing software issues, harnessing strong cross-discipline communication skills of technical concepts to non-technical audiences.",
+        ],
+        iconLogo: "/bulloch.jpeg",
+        location: "Mississauga, ON",
+        stack: ["C++", "SDL"],
+      },
+      {
+        title: "Software Consultant",
+        subtitle: "Anomet Inc.",
+        date: "Dec 2025 - Jun 2026",
+        
+        bullets: [
+          "Lead a digital transformation project for a manufacturing SMB, architecting a custom CRM with SharePoint Integration, leveraging NestJS, React, Postgres and Azure, enabling the sunsetting of a deprecated on-premise Windows Server 2012 R2.",
           "Gathered and documented business requirements from the President of the company, translating stakeholder needs into tangible technical designs.",
         ],
         iconLogo: "/anomet.jpeg",
@@ -22,9 +35,9 @@ export const ExperienceData: ExperienceTab[] = [
         stack: ["React", "NestJS","Postgres", "Azure", "Microsoft 365"],
       },
       {
-        title: "Software Developer (Contract)",
+        title: "Software Developer",
         subtitle: "Data Annotation",
-        date: "Apr 2024 - Present",
+        date: "Apr 2024 - Jun 2026",
         
         bullets: [
           "Leveraged Cline agentic IDE integrations to iteratively develop full-stack (React/Typescript/Postgres) applications supporting AI model evaluation workflows.",
@@ -36,7 +49,7 @@ export const ExperienceData: ExperienceTab[] = [
         stack: ["React", "TypeScript","Postgres", "Docker"],
       },
       {
-        title: "Software Developer (Co-op)",
+        title: "Software Developer",
         subtitle: "Adknown",
         date: "Jan 2023 - Aug 2023",
         bullets: [
@@ -49,7 +62,7 @@ export const ExperienceData: ExperienceTab[] = [
         stack: ["React", "PHP", "MySQL", "AWS", "Docker"],
       },
       {
-        title: "Software Developer (Co-op)",
+        title: "Software Developer",
         subtitle: "Tulip Retail",
         date: "May 2022 - Aug 2022",
         bullets: [
@@ -62,7 +75,7 @@ export const ExperienceData: ExperienceTab[] = [
         stack: ["React", "PHP", "MySQL","Docker"],
       },
       {
-        title: "Software Developer (Co-op)",
+        title: "Software Developer",
         subtitle: "NCR Corporation",
         date: "Sep 2021 - Dec 2021",
         bullets: [
@@ -74,7 +87,7 @@ export const ExperienceData: ExperienceTab[] = [
         stack: ["React", "Spring", "Docker"],  
       },
       {
-        title: "Web Developer (Co-op)",
+        title: "Web Developer",
         subtitle: "Heart & Stroke",
         date: "May 2021 - Aug 2021",
         bullets: [

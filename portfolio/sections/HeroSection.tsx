@@ -12,10 +12,10 @@ export function HeroSection() {
           Hey, it&apos;s Justin.
         </h1>
         <h3 className="md:text-lg text-md whitespace-nowrap shrink-0">
-          software developer based in Toronto 🇨🇦
+          software engineer based in Toronto 🇨🇦
         </h3>
         <p className="md:text-md text-sm text-gray-400 font-medium mb-4 mt-1">
-            Open to <span className="text-gray-300">on-site/hybrid</span> roles in the GTA.
+            Currently working @ <span className="text-gray-300">Bulloch Technologies</span>
         </p>
         <h2 className="md:text-lg text-sm font-semibold mb-8">Tech-savvy. People-focused.</h2>
         <SocialButtons />
