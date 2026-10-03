@@ -1,6 +1,19 @@
 @import "tailwindcss";
 
+/* Class-based dark mode: the `dark:` variant applies whenever an ancestor (or the
+   element itself) carries the `.dark` class, set on <html> by the no-flash script
+   in layout.tsx and flipped by the ThemeToggle. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Light is the default theme; `.dark` overrides the tokens. A faint off-white
+   background (not pure #fff) lets the white cards + borders read as distinct
+   surfaces instead of washing together. */
 :root {
+  --background: #f8fafc;
+  --foreground: #0a0a0a;
+}
+
+.dark {
   --background: #0a0a0a;
   --foreground: #ededed;
 }
@@ -12,10 +25,17 @@
   --font-mono: var(--font-geist-mono);
 }
 
-
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+/* Keep native UI (scrollbars, form controls) in step with the theme. */
+html {
+  color-scheme: light;
+}
+html.dark {
+  color-scheme: dark;
 }
 
 @layer base {

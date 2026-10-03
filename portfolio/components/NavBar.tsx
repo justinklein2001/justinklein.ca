@@ -21,18 +21,18 @@ export function NavBar({ currentApp, rightContent, className }: NavBarProps) {
   const visibleLinks = links.filter((link) => link.id !== currentApp);
 
   return (
-    <header className={cn("flex w-full items-center justify-between px-8 py-6 border-b border-[#1f2937] bg-[#111827]/50 backdrop-blur-sm sticky top-0 z-50", className)}>
-      <div className="flex items-center gap-2 text-xl font-bold tracking-tight text-white">
+    <header className={cn("flex w-full items-center justify-between px-8 py-6 border-b border-gray-200 bg-white/70 dark:border-[#1f2937] dark:bg-[#111827]/50 backdrop-blur-sm sticky top-0 z-50", className)}>
+      <div className="flex items-center gap-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
         <Link href="/" className="hover:opacity-80 transition-opacity">
           Justin Klein
         </Link>
-        
+
         {visibleLinks.map((link) => (
             <div key={link.id} className="flex items-center gap-2">
-                 <span className="text-gray-600 font-normal">|</span>
-                 <Link 
-                    href={link.href} 
-                    className="text-gray-400 font-normal hover:text-white transition-colors"
+                 <span className="text-gray-400 dark:text-gray-600 font-normal">|</span>
+                 <Link
+                    href={link.href}
+                    className="text-gray-500 font-normal hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
                   >
                     {link.name}
                  </Link>
